@@ -22,17 +22,24 @@ header{
     display: flex;
     }
 
-    .cabeça{transition: 1s;
+    .cabeça{
+            transition: 1s;
             gap: 50px;
             display: flex;
-            align-items: center;}
+            align-items: center;
+           }
 
-.cabeça:hover{transform: scale(1.1);
-             transition: 1s;}
+.cabeça:hover{
+             transform: scale(1.1);
+             transition: 1s;
+             }
 
-.ptc{text-align: end;
+.ptc{
+    text-align: end;
     border-right:2px solid aliceblue;
-    padding-right: 30px}
+    padding-right: 30px;
+    font-size: clamp(1rem, 1vw, 2rem);
+    }
 
 /*----------------------------*/
 
@@ -40,21 +47,23 @@ header{
         transition: 1s;
         background-color: rgba(0, 0, 0, 0.30);
         gap: 100px;
-        display: flex;
+        display: grid;
         justify-content: center;
+        align-items: center;
         padding: 20px;
-        align-items: start;
-        font-size: 30px;
+        font-size: clamp(1rem, 2.5vw, 2rem);
         margin: 0% auto;
-    }
+        grid-template-columns: repeat(auto-fit,minmax(250px,500px));
+       }
 
-.bloco1:hover{transition: 1s;
+.bloco1:hover{
+                transition: 1s;
                 transform: scale(+50px);
                 background-color: rgba(0, 0, 0, 0.70);
-                }
+             }
 
-.ptc3{min-width: 10px;
-      max-width: 500px;}
+.ptc3{max-height: 600px;
+      position: relative;}
 
 
 .bio{min-width: 10px;
@@ -82,22 +91,24 @@ header{
             justify-items:center;
             max-width: 70%;
             grid-template-columns: repeat(auto-fit, minmax(250px,500px));
+            padding-bottom: 20px;
         }
 
-    .caixa{transition: 1s;
+    .caixa{
+        transition: 1s;
         background-color: var(--primary);
-        color: aliceblue;
-        padding-bottom: 20px;
-        border-radius: 20px;
         opacity: 50%;
         text-align: center;
-        text-decoration:none;
+        padding: 10px;
+        width: 400px;
+        border-radius: 20px;
+        display: grid;
     }
-
+    
     .caixa img{
         width:100%;
-        min-height: 80% ;
-        max-height: 80%;
+        min-height: 20% ;
+        max-height: 100px;
         object-fit: cover;
         opacity: 50%;
     }
@@ -106,6 +117,21 @@ header{
         transition:1s;
         opacity: 0;}
     
+        a{
+        color: aliceblue;
+        text-decoration:none;
+        opacity:0%;
+        transition: 0.5s;
+        align-self: start;
+    }
+
+    .button{
+            background-color: var(--secondary);
+            border-radius: 20px;
+            width: 200px;
+            justify-self: center;
+            transition: 0.5s;
+    }
 
 .caixa:hover{
         opacity: 100%;
@@ -115,15 +141,26 @@ header{
                 opacity:100%;
                 transform: translateY(-10px);}
 
+.caixa:hover a{opacity: 100%;
+                transition: 2s;
+                transform: translateY(-20px);}
+
+.button:hover {background-color: aliceblue;
+            color: var(--secondary);
+            transition: 0.5s;}
+
 
 
 /*-----------------------------------*/
 
-.bloco3{text-align: center;}
+.bloco3{text-align: center;
+        font-size: clamp(10px, 2.5vw, 20px);}
 
-.ferramentas{display:flex;
+.ferramentas{display:grid;
+            justify-content: center;
             padding: 50px;
-             gap: 20px;}
+            gap: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(100px,300px));}
 
 .icon{display: flex;
       align-items: center;

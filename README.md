@@ -6,7 +6,7 @@ My first portfolio (2026 2nd semester). Site,css, all made in Vs code.
 
 Hi!
 Its already uploaded in Vercel too,
-its: https://portifolio100.vercel.app/
+its: https://portifolio101.vercel.app/
 Go on and check out!
 
 I'll update it a once a while,maybe changing the code structure a bit
